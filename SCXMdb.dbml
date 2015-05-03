@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EF_QLSCXeMay" Class="SCXMdbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTRI\LOCALHOST;Initial Catalog=EF_QLSCXeMay;Integrated Security=True" SettingsObjectName="DeTai.Properties.Settings" SettingsPropertyName="EF_QLSCXeMayConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTRI-PC\LOCALHOST;Initial Catalog=EF_QLSCXeMay;Integrated Security=True" SettingsObjectName="DeTai.Properties.Settings" SettingsPropertyName="EF_QLSCXeMayConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietSuaChua" Member="ChiTietSuaChuas">
     <Type Name="ChiTietSuaChua">
       <Column Name="MaCTSC" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -17,8 +17,8 @@
       <Column Name="MaLXe" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
       <Column Name="MauXe" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="X_Xe_Khach" Member="Xe_Khaches" ThisKey="MaXe" OtherKey="MaXe" Type="Xe_Khach" />
-      <Association Name="LoaiX_X" Member="LoaiXe" ThisKey="MaLXe" OtherKey="MaLXe" Type="LoaiXe" IsForeignKey="true" />
+      <Association Name="Xe_Xe_Khach" Member="Xe_Khaches" ThisKey="MaXe" OtherKey="MaXe" Type="Xe_Khach" />
+      <Association Name="LoaiXe_Xe" Member="LoaiXe" ThisKey="MaLXe" OtherKey="MaLXe" Type="LoaiXe" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CongViecs" Member="CongViecs">
@@ -79,7 +79,7 @@
       <Column Name="TenLXe" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Association Name="LoaiX_X" Member="Xes" ThisKey="MaLXe" OtherKey="MaLXe" Type="Xe" />
+      <Association Name="LoaiXe_Xe" Member="Xes" ThisKey="MaLXe" OtherKey="MaLXe" Type="Xe" />
     </Type>
   </Table>
   <Table Name="dbo.MucDoThanhThao" Member="MucDoThanhThaos">
@@ -223,7 +223,7 @@
       <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Xe_Khach_SuaChua" Member="SuaChuas" ThisKey="ID" OtherKey="IDXe_Khach" Type="SuaChua" />
       <Association Name="KhachHang_Xe_Khach" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
-      <Association Name="X_Xe_Khach" Member="Xe" ThisKey="MaXe" OtherKey="MaXe" Type="Xe" IsForeignKey="true" />
+      <Association Name="Xe_Xe_Khach" Member="Xe" ThisKey="MaXe" OtherKey="MaXe" Type="Xe" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

@@ -49,26 +49,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -162,6 +164,87 @@
     </Compile>
     <Compile Include="FormLookXe.Designer.cs">
       <DependentUpon>FormLookXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\ChiTietSuaChua.cs" />
+    <Compile Include="ORMDataModelCode\ChiTietSuaChua.Designer.cs">
+      <DependentUpon>ChiTietSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\CongViecs.cs" />
+    <Compile Include="ORMDataModelCode\CongViecs.Designer.cs">
+      <DependentUpon>CongViecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\CongViecSuaChua.cs" />
+    <Compile Include="ORMDataModelCode\CongViecSuaChua.Designer.cs">
+      <DependentUpon>CongViecSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\ConnectionHelper.cs" />
+    <Compile Include="ORMDataModelCode\KhachHangs.cs" />
+    <Compile Include="ORMDataModelCode\KhachHangs.Designer.cs">
+      <DependentUpon>KhachHangs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\LoaiNV.cs" />
+    <Compile Include="ORMDataModelCode\LoaiNV.Designer.cs">
+      <DependentUpon>LoaiNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\LoaiThietBis.cs" />
+    <Compile Include="ORMDataModelCode\LoaiThietBis.Designer.cs">
+      <DependentUpon>LoaiThietBis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\LoaiXes.cs" />
+    <Compile Include="ORMDataModelCode\LoaiXes.Designer.cs">
+      <DependentUpon>LoaiXes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\MucDoThanhThao.cs" />
+    <Compile Include="ORMDataModelCode\MucDoThanhThao.Designer.cs">
+      <DependentUpon>MucDoThanhThao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\NhanVien.cs" />
+    <Compile Include="ORMDataModelCode\NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\NhaSanXuat.cs" />
+    <Compile Include="ORMDataModelCode\NhaSanXuat.Designer.cs">
+      <DependentUpon>NhaSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\NhomThoes.cs" />
+    <Compile Include="ORMDataModelCode\NhomThoes.Designer.cs">
+      <DependentUpon>NhomThoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\PhieuThus.cs" />
+    <Compile Include="ORMDataModelCode\PhieuThus.Designer.cs">
+      <DependentUpon>PhieuThus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\QuyenTruyCaps.cs" />
+    <Compile Include="ORMDataModelCode\QuyenTruyCaps.Designer.cs">
+      <DependentUpon>QuyenTruyCaps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\SuaChuas.cs" />
+    <Compile Include="ORMDataModelCode\SuaChuas.Designer.cs">
+      <DependentUpon>SuaChuas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\TaiKhoans.cs" />
+    <Compile Include="ORMDataModelCode\TaiKhoans.Designer.cs">
+      <DependentUpon>TaiKhoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\ThietBi.cs" />
+    <Compile Include="ORMDataModelCode\ThietBi.Designer.cs">
+      <DependentUpon>ThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\ThietBiSuaChua.cs" />
+    <Compile Include="ORMDataModelCode\ThietBiSuaChua.Designer.cs">
+      <DependentUpon>ThietBiSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\Tho_Nhom.cs" />
+    <Compile Include="ORMDataModelCode\Tho_Nhom.Designer.cs">
+      <DependentUpon>Tho_Nhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\Xes.cs" />
+    <Compile Include="ORMDataModelCode\Xes.Designer.cs">
+      <DependentUpon>Xes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModelCode\Xe_Khach.cs" />
+    <Compile Include="ORMDataModelCode\Xe_Khach.Designer.cs">
+      <DependentUpon>Xe_Khach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -365,6 +448,10 @@
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="ORMDataModel.xpo" />
+    <None Include="ORMDataModel.xpo.diagram">
+      <DependentUpon>ORMDataModel.xpo</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\ChiTietSuaChua.datasource" />
     <None Include="Properties\DataSources\CongViec.datasource" />
     <None Include="Properties\DataSources\CongViecSuaChua.datasource" />
@@ -421,6 +508,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
