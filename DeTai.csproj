@@ -167,87 +167,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLSuaXeDataModelCode\ChiTietSuaChua.cs" />
-    <Compile Include="QLSuaXeDataModelCode\ChiTietSuaChua.Designer.cs">
-      <DependentUpon>ChiTietSuaChua.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\CongViecs.cs" />
-    <Compile Include="QLSuaXeDataModelCode\CongViecs.Designer.cs">
-      <DependentUpon>CongViecs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\CongViecSuaChua.cs" />
-    <Compile Include="QLSuaXeDataModelCode\CongViecSuaChua.Designer.cs">
-      <DependentUpon>CongViecSuaChua.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\ConnectionHelper.cs" />
-    <Compile Include="QLSuaXeDataModelCode\KhachHangs.cs" />
-    <Compile Include="QLSuaXeDataModelCode\KhachHangs.Designer.cs">
-      <DependentUpon>KhachHangs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\LoaiNV.cs" />
-    <Compile Include="QLSuaXeDataModelCode\LoaiNV.Designer.cs">
-      <DependentUpon>LoaiNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\LoaiThietBis.cs" />
-    <Compile Include="QLSuaXeDataModelCode\LoaiThietBis.Designer.cs">
-      <DependentUpon>LoaiThietBis.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\LoaiXes.cs" />
-    <Compile Include="QLSuaXeDataModelCode\LoaiXes.Designer.cs">
-      <DependentUpon>LoaiXes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\MucDoThanhThao.cs" />
-    <Compile Include="QLSuaXeDataModelCode\MucDoThanhThao.Designer.cs">
-      <DependentUpon>MucDoThanhThao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\NhanVien.cs" />
-    <Compile Include="QLSuaXeDataModelCode\NhanVien.Designer.cs">
-      <DependentUpon>NhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\NhaSanXuat.cs" />
-    <Compile Include="QLSuaXeDataModelCode\NhaSanXuat.Designer.cs">
-      <DependentUpon>NhaSanXuat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\NhomThoes.cs" />
-    <Compile Include="QLSuaXeDataModelCode\NhomThoes.Designer.cs">
-      <DependentUpon>NhomThoes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\PhieuThus.cs" />
-    <Compile Include="QLSuaXeDataModelCode\PhieuThus.Designer.cs">
-      <DependentUpon>PhieuThus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\QuyenTruyCaps.cs" />
-    <Compile Include="QLSuaXeDataModelCode\QuyenTruyCaps.Designer.cs">
-      <DependentUpon>QuyenTruyCaps.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\SuaChuas.cs" />
-    <Compile Include="QLSuaXeDataModelCode\SuaChuas.Designer.cs">
-      <DependentUpon>SuaChuas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\TaiKhoans.cs" />
-    <Compile Include="QLSuaXeDataModelCode\TaiKhoans.Designer.cs">
-      <DependentUpon>TaiKhoans.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\ThietBi.cs" />
-    <Compile Include="QLSuaXeDataModelCode\ThietBi.Designer.cs">
-      <DependentUpon>ThietBi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\ThietBiSuaChua.cs" />
-    <Compile Include="QLSuaXeDataModelCode\ThietBiSuaChua.Designer.cs">
-      <DependentUpon>ThietBiSuaChua.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\Tho_Nhom.cs" />
-    <Compile Include="QLSuaXeDataModelCode\Tho_Nhom.Designer.cs">
-      <DependentUpon>Tho_Nhom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\Xes.cs" />
-    <Compile Include="QLSuaXeDataModelCode\Xes.Designer.cs">
-      <DependentUpon>Xes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLSuaXeDataModelCode\Xe_Khach.cs" />
-    <Compile Include="QLSuaXeDataModelCode\Xe_Khach.Designer.cs">
-      <DependentUpon>Xe_Khach.cs</DependentUpon>
-    </Compile>
     <Compile Include="ReportHoaDon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -463,10 +382,6 @@
     <None Include="Properties\DataSources\ThietBi.datasource" />
     <None Include="Properties\DataSources\ThietBiSuaChua.datasource" />
     <None Include="Properties\DataSources\Tho_Nhom.datasource" />
-    <None Include="QLSuaXeDataModel.xpo" />
-    <None Include="QLSuaXeDataModel.xpo.diagram">
-      <DependentUpon>QLSuaXeDataModel.xpo</DependentUpon>
-    </None>
     <None Include="SCXMdb.dbml.layout">
       <DependentUpon>SCXMdb.dbml</DependentUpon>
     </None>
