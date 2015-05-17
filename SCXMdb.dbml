@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EF_QLSCXeMay" Class="SCXMdbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTRI-PC\LOCALHOST;Initial Catalog=EF_QLSCXeMay;Integrated Security=True" SettingsObjectName="DeTai.Properties.Settings" SettingsPropertyName="EF_QLSCXeMayConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTRI-PC;Initial Catalog=EF_QLSCXeMay;Integrated Security=True" SettingsObjectName="DeTai.Properties.Settings" SettingsPropertyName="EF_QLSCXeMayConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietSuaChua" Member="ChiTietSuaChuas">
     <Type Name="ChiTietSuaChua">
       <Column Name="MaCTSC" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

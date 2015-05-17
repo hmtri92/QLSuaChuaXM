@@ -96,6 +96,9 @@ namespace DeTai
                 String temp = null;
                 int j = 0;
                 bool f = false;
+
+                // kiểm tra 1 thợ add nhiều lần
+                // duyệt từ đầu để kiểm tra
                 while (j < i)
                 {
                     temp = gridViewThanhVien.GetRowCellValue(j, colMaTho).ToString();
@@ -107,6 +110,7 @@ namespace DeTai
                     }
                     j++;
                 }
+
                 if (f == true)
                     continue;
 

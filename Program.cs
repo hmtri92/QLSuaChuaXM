@@ -18,9 +18,9 @@ namespace DeTai
             //initApp();
 
             thread_login = new Thread(new ThreadStart(openLogin));
-            thread_Admin = new Thread(new ThreadStart(openAddmin));
-            thread_KeToan = new Thread(new ThreadStart(openKeToan));
-            thread_Kho = new Thread(new ThreadStart(openKho));
+            //thread_Admin = new Thread(new ThreadStart(openAddmin));
+            //thread_KeToan = new Thread(new ThreadStart(openKeToan));
+            //thread_Kho = new Thread(new ThreadStart(openKho));
 
             //Application.Run(new FormTaoMa());
             thread_login.Start();
@@ -36,27 +36,27 @@ namespace DeTai
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
         }
 
-        static void openLogin()
+        public static void openLogin()
         {
             initApp();
             Application.Run(new FormLogin());
 
         }
 
-        static void openAddmin()
+        public static void openAddmin()
         {
             initApp();
             Application.Run(new FormAddmin());
 
         }
 
-        static void openKeToan()
+        public static void openKeToan()
         {
             initApp();
             Application.Run(new FormKeToan());
         }
 
-        static void openKho()
+        public static void openKho()
         {
             initApp();
             Application.Run(new FormKho());

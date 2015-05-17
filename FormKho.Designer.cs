@@ -51,6 +51,7 @@
             this.btnTaiKhoan = new DevExpress.XtraNavBar.NavBarItem();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.splitContainerControlRight = new DevExpress.XtraEditors.SplitContainerControl();
+            this.btnLogout = new DevExpress.XtraEditors.SimpleButton();
             this.btnChange = new DevExpress.XtraEditors.SimpleButton();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -267,6 +268,7 @@
             this.splitContainerControlRight.Horizontal = false;
             this.splitContainerControlRight.Location = new System.Drawing.Point(0, 0);
             this.splitContainerControlRight.Name = "splitContainerControlRight";
+            this.splitContainerControlRight.Panel1.Controls.Add(this.btnLogout);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnChange);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnReset);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnDelete);
@@ -280,6 +282,16 @@
             this.splitContainerControlRight.SplitterPosition = 45;
             this.splitContainerControlRight.TabIndex = 1;
             this.splitContainerControlRight.Text = "splitContainerControl1";
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(344, 6);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(81, 33);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnChange
             // 
@@ -475,5 +487,6 @@
         private DevExpress.XtraEditors.SimpleButton btnRe;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
         private DevExpress.XtraNavBar.NavBarItem btnTaiKhoan;
+        private DevExpress.XtraEditors.SimpleButton btnLogout;
     }
 }

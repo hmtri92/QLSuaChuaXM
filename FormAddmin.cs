@@ -18,6 +18,8 @@ namespace DeTai
 {
     public partial class FormAddmin : DevExpress.XtraEditors.XtraForm
     {
+        SCXMdbDataContext db;
+
         UserControl mainComponent;
         int numpage = 1;
         int f_Entity = 0;
@@ -32,6 +34,7 @@ namespace DeTai
         {
             InitializeComponent();
             this.Text = Program.user.UserName;
+            db = new SCXMdbDataContext();
         }
 
         private void setView()
@@ -169,7 +172,7 @@ namespace DeTai
                     return;
                 f_Entity = TAI_KHOAN;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var taikhoans = from p in db.TaiKhoans
                                 where p.deleted == false
@@ -211,7 +214,7 @@ namespace DeTai
                 }
                 f_Entity = ROLE;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var roles = from p in db.QuyenTruyCaps
                             where p.deleted == false
@@ -253,7 +256,7 @@ namespace DeTai
                 }
                 f_Entity = NHAN_VIEN;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var nhanviens = from p in db.NhanViens
                                 where p.deleted == false
@@ -306,7 +309,7 @@ namespace DeTai
                 }
                 f_Entity = NHOM_THO;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var nhomthos = from p in db.NhomThoes
                                where p.deleted == false
@@ -416,7 +419,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 var nhomthos = from p in db.NhomThoes
                                where p.deleted == false && (p.TenNhom.Contains(value) || p.NhanVien.TenNV.Contains(value)
                                || p.TruongNhom.Contains(value))
@@ -446,7 +449,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var nhanviens = from p in db.NhanViens
                                 where p.deleted == false && (p.TenNV.Contains(value) || p.SDT.Contains(value)
@@ -487,7 +490,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var roles = from p in db.QuyenTruyCaps
                             where p.deleted == false && (p.TenQuyen.Contains(value))
@@ -518,7 +521,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var taikhoans = from p in db.TaiKhoans
                                 where p.deleted == false && (p.UserName.Contains(value))
@@ -646,7 +649,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     NhomThoe nhomtho = db.NhomThoes.Single(p => p.MaNhom == id);
@@ -681,7 +684,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     NhanVien nhanvien = db.NhanViens.Single(p => p.MaNV == id);
@@ -715,7 +718,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     QuyenTruyCap role = db.QuyenTruyCaps.Single(p => p.MaQuyen == id);
@@ -749,7 +752,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     TaiKhoan taikhoan = db.TaiKhoans.Single(p => p.UserName == id);
@@ -812,6 +815,14 @@ namespace DeTai
             {
                 btnSearch_Click(null, null);
             }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Program.thread_login = new Thread(new ThreadStart(Program.openLogin));
+            Program.thread_login.SetApartmentState(ApartmentState.STA);
+            Program.thread_login.Start();
+            this.Close();
         }
     }
 }

@@ -39,10 +39,10 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.rdoStay = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.quyenTruyCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblTitle = new DevExpress.XtraEditors.LabelControl();
             this.btnCheckMaCV = new DevExpress.XtraEditors.SimpleButton();
             this.lookRole = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.quyenTruyCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colTenQuyen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,8 +50,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoStay.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookRole.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,10 +144,6 @@
             this.labelControl2.TabIndex = 22;
             this.labelControl2.Text = "Quyền";
             // 
-            // quyenTruyCapBindingSource
-            // 
-            this.quyenTruyCapBindingSource.DataSource = typeof(DeTai.QuyenTruyCap);
-            // 
             // lblTitle
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +178,10 @@
             this.lookRole.Size = new System.Drawing.Size(210, 26);
             this.lookRole.TabIndex = 3;
             this.lookRole.Click += new System.EventHandler(this.texbox_Click);
+            // 
+            // quyenTruyCapBindingSource
+            // 
+            this.quyenTruyCapBindingSource.DataSource = typeof(DeTai.QuyenTruyCap);
             // 
             // gridLookUpEdit1View
             // 
@@ -232,8 +232,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoStay.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookRole.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

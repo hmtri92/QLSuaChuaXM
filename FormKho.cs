@@ -12,11 +12,14 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace DeTai
 {
     public partial class FormKho : DevExpress.XtraEditors.XtraForm
     {
+        SCXMdbDataContext db;
+
         UserControl mainComponent;
         int numpage = 1;
         int f_Entity = 0;
@@ -28,6 +31,7 @@ namespace DeTai
         public FormKho()
         {
             InitializeComponent();
+            db = new SCXMdbDataContext();
         }
 
         private void setView()
@@ -73,8 +77,6 @@ namespace DeTai
                 if (numpage < 1)
                     return;
                 f_Entity = THIET_BI;
-
-                SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var thietbis = from p in db.ThietBis
                                where p.deleted == false
@@ -134,8 +136,6 @@ namespace DeTai
                     return;
                 f_Entity = NSX;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
-
                 var nhasanxuats = from p in db.NhaSanXuats
                                   where p.deleted == false
                                   select new
@@ -179,8 +179,6 @@ namespace DeTai
                 if (numpage < 1)
                     return;
                 f_Entity = LOAI_THIET_BI;
-
-                SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var loaithietbis = from p in db.LoaiThietBis
                                    where p.deleted == false
@@ -304,7 +302,6 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     LoaiThietBi loaithietbi = db.LoaiThietBis.Single(p => p.MaLoaiTB == id);
@@ -337,7 +334,6 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     NhaSanXuat nsx = db.NhaSanXuats.Single(p => p.MaNSX == id);
@@ -370,7 +366,6 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     ThietBi thietbi = db.ThietBis.Single(p => p.MaThietBi == id);
@@ -419,7 +414,6 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var loaithietbis = from p in db.LoaiThietBis
                                    where p.deleted == false && p.TenLoaiTB.Contains(value)
@@ -449,7 +443,6 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var nhasanxuats = from p in db.NhaSanXuats
                                   where p.deleted == false && p.TenNSX.Contains(value)
@@ -481,7 +474,6 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var thietbis = from p in db.ThietBis
                                where p.deleted == false && (p.TenThietBi.Contains(value) || p.QuyCach.Contains(value) || p.NhaSanXuat1.TenNSX.Contains(value))
@@ -652,8 +644,6 @@ namespace DeTai
                 setView();
                 f_Entity = THIET_BI;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
-
                 var thietbis = from p in db.ThietBis
                                where p.deleted == false && p.SoLuong <= p.min
                                select new
@@ -710,6 +700,14 @@ namespace DeTai
         private void btnCheckThietBi_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             checkThietBi();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Program.thread_login = new Thread(new ThreadStart(Program.openLogin));
+            Program.thread_login.SetApartmentState(ApartmentState.STA);
+            Program.thread_login.Start();
+            this.Close();
         }
     }
 }

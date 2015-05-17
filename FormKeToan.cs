@@ -15,25 +15,29 @@ using System.Xml;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid;
 using System.Data.SqlClient;
+using System.Threading;
 
 
 namespace DeTai
 {
     public partial class FormKeToan : XtraForm
     {
+        SCXMdbDataContext db;
+
         UserControl mainComponent;
         int numpage = 1;
         int f_Entity = 0;
 
-        const int SUACHUA = 1;
-        const int KHACHHANG = 2;
+        const int SUA_CHUA = 1;
+        const int KHACH_HANG = 2;
         const int XE = 3;
-        const int LOAIXE = 4;
-        const int CONGVIEC = 5;
+        const int LOAI_XE = 4;
+        const int CONG_VIEC = 5;
 
         public FormKeToan()
         {
             InitializeComponent();
+            db = new SCXMdbDataContext();
         }
         
         void setAddOrChange()
@@ -71,19 +75,19 @@ namespace DeTai
         {
             switch (f_Entity)
             {
-                case SUACHUA:
+                case SUA_CHUA:
                     changeSuaChua(view, pt);
                     break;
-                case KHACHHANG:
+                case KHACH_HANG:
                     changeKhachHang(view, pt);
                     break;
                 case XE:
                     changeXe(view, pt);
                     break;
-                case LOAIXE:
+                case LOAI_XE:
                     changeLXe(view, pt);
                     break;
-                case CONGVIEC:
+                case CONG_VIEC:
                     changeCongViec(view, pt);
                     break;
             }
@@ -175,16 +179,17 @@ namespace DeTai
             try
             {
                 setView();
-                if (f_Entity != SUACHUA)
+                if (f_Entity != SUA_CHUA)
                 {
                     numpage = 1;
                     txtpage.Text = numpage.ToString();
                 }
                 if (numpage < 1)
                     return;
-                f_Entity = SUACHUA;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                f_Entity = SUA_CHUA;
+
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var suachuas = from p in db.SuaChuas
                                where p.deleted == false
@@ -249,7 +254,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     SuaChua suachua = db.SuaChuas.Single(p => p.MaSC == id);
@@ -284,7 +289,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     Xe xe = db.Xes.Single(p => p.MaXe == id);
@@ -319,7 +324,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     LoaiXe loaixe = db.LoaiXes.Single(p => p.MaLXe == id);
@@ -363,16 +368,16 @@ namespace DeTai
         {
             switch (f_Entity)
             {
-                case SUACHUA:
+                case SUA_CHUA:
                     deleteSuaChua(gridView);
                     break;
                 case XE:
                     deleteXe(gridView);
                     break;
-                case LOAIXE:
+                case LOAI_XE:
                     deleteLoaiXe(gridView);
                     break;
-                case CONGVIEC:
+                case CONG_VIEC:
                     deletecongViec(gridView);
                     break;
             }
@@ -392,7 +397,7 @@ namespace DeTai
                 int row = view.GetSelectedRows()[0];
                 String id = view.GetRowCellValue(row, "ID").ToString();
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 try
                 {
                     CongViec congviec = db.CongViecs.Single(p => p.MaCV == id);
@@ -426,16 +431,16 @@ namespace DeTai
 
             switch (f_Entity)
             {
-                case SUACHUA:
+                case SUA_CHUA:
                     btnXemHoaDon_LinkClicked(null, null);
                     break;
                 case XE:
                     btnXemXe_LinkClicked(null, null);
                     break;
-                case LOAIXE:
+                case LOAI_XE:
                     btnXemLXe_LinkClicked(null, null);
                     break;
-                case CONGVIEC:
+                case CONG_VIEC:
                     btnXemCV_LinkClicked(null, null);
                     break;
             }
@@ -448,16 +453,16 @@ namespace DeTai
 
             switch (f_Entity)
             {
-                case SUACHUA:
+                case SUA_CHUA:
                     btnXemHoaDon_LinkClicked(null, null);
                     break;
                 case XE:
                     btnXemXe_LinkClicked(null, null);
                     break;
-                case LOAIXE:
+                case LOAI_XE:
                     btnXemLXe_LinkClicked(null, null);
                     break;
-                case CONGVIEC:
+                case CONG_VIEC:
                     btnXemCV_LinkClicked(null, null);
                     break;
             }
@@ -484,7 +489,7 @@ namespace DeTai
         {
             splitContainerControlRight.Panel2.Controls.Clear();
             setView();
-            f_Entity = KHACHHANG;
+            f_Entity = KHACH_HANG;
 
             txtSearch.Focus();
         }
@@ -505,7 +510,7 @@ namespace DeTai
 
                 f_Entity = XE;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var xes = from p in db.Xes
                           where p.deleted == false
@@ -547,19 +552,19 @@ namespace DeTai
 
                 switch (f_Entity)
                 {
-                    case SUACHUA:
+                    case SUA_CHUA:
                         mainComponent = new UC_updateHoaDon(id);
                         break;
-                    case KHACHHANG:
+                    case KHACH_HANG:
                         mainComponent = new UC_ThemKH(id);
                         break;
                     case XE:
                         mainComponent = new UC_ThemXe(id);
                         break;
-                    case LOAIXE:
+                    case LOAI_XE:
                         mainComponent = new UC_ThemLoaiXe(id);
                         break;
-                    case CONGVIEC:
+                    case CONG_VIEC:
                         mainComponent = new UC_CongViec(id);
                         break;
                 }
@@ -587,19 +592,19 @@ namespace DeTai
 
             switch (f_Entity)
             {
-                case SUACHUA:
+                case SUA_CHUA:
                     searchSuaChua();
                     break;
-                case KHACHHANG:
+                case KHACH_HANG:
                     searchKhachHang();
                     break;
                 case XE:
                     searchXe();
                     break;
-                case LOAIXE:
+                case LOAI_XE:
                     searchLXe();
                     break;
-                case CONGVIEC:
+                case CONG_VIEC:
                     searchCongViec();
                     break;
             }
@@ -610,7 +615,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var congviecs = from p in db.CongViecs
                                 where p.deleted == false && (p.TenCV.Contains(value) || p.MoTa.Contains(value))
@@ -641,7 +646,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var loaixes = from p in db.LoaiXes
                               where p.deleted == false && p.TenLXe.Contains(value)
@@ -671,7 +676,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var xes = from p in db.Xes
                           where p.deleted == false && (p.MaXe.Contains(value) || p.LoaiXe.TenLXe.Contains(value))
@@ -701,7 +706,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var khachhangs = from p in db.KhachHangs
                                  where p.deleted == false && (p.SoDienThoai.Contains(value) || p.TenKH.Contains(value) || p.DiaChi.Contains(value))
@@ -733,7 +738,7 @@ namespace DeTai
             try
             {
                 String value = txtSearch.Text;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var suachuas = from p in db.SuaChuas
                                where p.deleted == false &&
@@ -786,7 +791,7 @@ namespace DeTai
             try
             {
                 setView();
-                if (f_Entity != LOAIXE)
+                if (f_Entity != LOAI_XE)
                 {
                     numpage = 1;
                     txtpage.Text = "" + 1;
@@ -796,9 +801,9 @@ namespace DeTai
                 if (numpage < 1)
                     return;
 
-                f_Entity = LOAIXE;
+                f_Entity = LOAI_XE;
 
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                //SCXMdbDataContext db = new SCXMdbDataContext();
 
                 var loaixes = from p in db.LoaiXes
                               where p.deleted == false
@@ -840,14 +845,14 @@ namespace DeTai
             try
             {
                 setView();
-                if (f_Entity != CONGVIEC)
+                if (f_Entity != CONG_VIEC)
                 {
                     numpage = 1;
                     txtpage.Text = numpage.ToString();
                 }
 
-                f_Entity = CONGVIEC;
-                SCXMdbDataContext db = new SCXMdbDataContext();
+                f_Entity = CONG_VIEC;
+                //SCXMdbDataContext db = new SCXMdbDataContext();
                 var congviecs = from p in db.CongViecs
                                 where p.deleted == false
                                 select new
@@ -889,6 +894,14 @@ namespace DeTai
         {
             mainComponent = new UC_ChangePassWord();
             setAddOrChange();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Program.thread_login = new Thread(new ThreadStart(Program.openLogin));
+            Program.thread_login.SetApartmentState(ApartmentState.STA);
+            Program.thread_login.Start();
+            this.Close();
         }
 
     }

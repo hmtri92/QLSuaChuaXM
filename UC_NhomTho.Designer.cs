@@ -81,7 +81,7 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFullName.Properties.Appearance.Options.UseFont = true;
-            this.txtFullName.Size = new System.Drawing.Size(211, 26);
+            this.txtFullName.Size = new System.Drawing.Size(362, 26);
             this.txtFullName.TabIndex = 2;
             this.txtFullName.Click += new System.EventHandler(this.texbox_Click);
             // 
@@ -106,7 +106,7 @@
             // btnCheckMaNhom
             // 
             this.btnCheckMaNhom.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaNhom.Image")));
-            this.btnCheckMaNhom.Location = new System.Drawing.Point(388, 111);
+            this.btnCheckMaNhom.Location = new System.Drawing.Point(531, 113);
             this.btnCheckMaNhom.Name = "btnCheckMaNhom";
             this.btnCheckMaNhom.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaNhom.TabIndex = 1;
@@ -119,7 +119,7 @@
             this.txtMa.Name = "txtMa";
             this.txtMa.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMa.Properties.Appearance.Options.UseFont = true;
-            this.txtMa.Size = new System.Drawing.Size(211, 26);
+            this.txtMa.Size = new System.Drawing.Size(364, 26);
             this.txtMa.TabIndex = 0;
             this.txtMa.Click += new System.EventHandler(this.texbox_Click);
             // 
@@ -158,7 +158,7 @@
             this.gridThanhVien.Name = "gridThanhVien";
             this.gridThanhVien.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.SearchLookUpEditTho});
-            this.gridThanhVien.Size = new System.Drawing.Size(208, 217);
+            this.gridThanhVien.Size = new System.Drawing.Size(359, 217);
             this.gridThanhVien.TabIndex = 5;
             this.gridThanhVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewThanhVien});
@@ -188,6 +188,7 @@
             this.colMaTho.Name = "colMaTho";
             this.colMaTho.Visible = true;
             this.colMaTho.VisibleIndex = 0;
+            this.colMaTho.Width = 248;
             // 
             // SearchLookUpEditTho
             // 
@@ -236,7 +237,7 @@
             // 
             // btnResetCV
             // 
-            this.btnResetCV.Location = new System.Drawing.Point(331, 238);
+            this.btnResetCV.Location = new System.Drawing.Point(484, 238);
             this.btnResetCV.Name = "btnResetCV";
             this.btnResetCV.Size = new System.Drawing.Size(41, 23);
             this.btnResetCV.TabIndex = 6;
@@ -244,7 +245,7 @@
             // 
             // btnAddCongViec
             // 
-            this.btnAddCongViec.Location = new System.Drawing.Point(278, 238);
+            this.btnAddCongViec.Location = new System.Drawing.Point(431, 238);
             this.btnAddCongViec.Name = "btnAddCongViec";
             this.btnAddCongViec.Size = new System.Drawing.Size(47, 23);
             this.btnAddCongViec.TabIndex = 4;
@@ -269,7 +270,7 @@
             this.lookNhomTruong.Properties.NullText = "";
             this.lookNhomTruong.Properties.PopupSizeable = false;
             this.lookNhomTruong.Properties.ValueMember = "MaNV";
-            this.lookNhomTruong.Size = new System.Drawing.Size(209, 26);
+            this.lookNhomTruong.Size = new System.Drawing.Size(362, 26);
             this.lookNhomTruong.TabIndex = 3;
             this.lookNhomTruong.Click += new System.EventHandler(this.texbox_Click);
             // 
@@ -290,7 +291,7 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.lookNhomTruong);
             this.Name = "UC_NhomTho";
-            this.Size = new System.Drawing.Size(452, 508);
+            this.Size = new System.Drawing.Size(632, 508);
             this.Load += new System.EventHandler(this.UC_NhomTho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtFullName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();

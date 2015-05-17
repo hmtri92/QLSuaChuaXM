@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKeToan));
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
+            this.TaiKhoanGroup = new DevExpress.XtraNavBar.NavBarGroup();
+            this.btnChangePass = new DevExpress.XtraNavBar.NavBarItem();
             this.HoaDonGroup = new DevExpress.XtraNavBar.NavBarGroup();
             this.btnXemHoaDon = new DevExpress.XtraNavBar.NavBarItem();
             this.btnThemHoaDon = new DevExpress.XtraNavBar.NavBarItem();
@@ -51,6 +53,7 @@
             this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.navbarImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.splitContainerControlRight = new DevExpress.XtraEditors.SplitContainerControl();
+            this.btnLogout = new DevExpress.XtraEditors.SimpleButton();
             this.btnChange = new DevExpress.XtraEditors.SimpleButton();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -65,8 +68,6 @@
             this.btnRe = new DevExpress.XtraEditors.SimpleButton();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.TaiKhoanGroup = new DevExpress.XtraNavBar.NavBarGroup();
-            this.btnChangePass = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -123,6 +124,20 @@
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.ExplorerBar;
             this.navBarControl.SmallImages = this.navbarImageCollection;
             this.navBarControl.StoreDefaultPaintStyleName = true;
+            // 
+            // TaiKhoanGroup
+            // 
+            resources.ApplyResources(this.TaiKhoanGroup, "TaiKhoanGroup");
+            this.TaiKhoanGroup.Expanded = true;
+            this.TaiKhoanGroup.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.btnChangePass)});
+            this.TaiKhoanGroup.Name = "TaiKhoanGroup";
+            // 
+            // btnChangePass
+            // 
+            resources.ApplyResources(this.btnChangePass, "btnChangePass");
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.btnChangePass_LinkClicked);
             // 
             // HoaDonGroup
             // 
@@ -257,6 +272,7 @@
             resources.ApplyResources(this.splitContainerControlRight, "splitContainerControlRight");
             this.splitContainerControlRight.Horizontal = false;
             this.splitContainerControlRight.Name = "splitContainerControlRight";
+            this.splitContainerControlRight.Panel1.Controls.Add(this.btnLogout);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnChange);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnReset);
             this.splitContainerControlRight.Panel1.Controls.Add(this.btnDelete);
@@ -267,6 +283,13 @@
             this.splitContainerControlRight.Panel2.Controls.Add(this.panelMain);
             resources.ApplyResources(this.splitContainerControlRight.Panel2, "splitContainerControlRight.Panel2");
             this.splitContainerControlRight.SplitterPosition = 45;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            resources.ApplyResources(this.btnLogout, "btnLogout");
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnChange
             // 
@@ -367,20 +390,6 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Caramel";
             // 
-            // TaiKhoanGroup
-            // 
-            resources.ApplyResources(this.TaiKhoanGroup, "TaiKhoanGroup");
-            this.TaiKhoanGroup.Expanded = true;
-            this.TaiKhoanGroup.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.btnChangePass)});
-            this.TaiKhoanGroup.Name = "TaiKhoanGroup";
-            // 
-            // btnChangePass
-            // 
-            resources.ApplyResources(this.btnChangePass, "btnChangePass");
-            this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.btnChangePass_LinkClicked);
-            // 
             // FormKeToan
             // 
             resources.ApplyResources(this, "$this");
@@ -451,6 +460,7 @@
         private DevExpress.XtraNavBar.NavBarItem btnThemCV;
         private DevExpress.XtraNavBar.NavBarGroup TaiKhoanGroup;
         private DevExpress.XtraNavBar.NavBarItem btnChangePass;
+        private DevExpress.XtraEditors.SimpleButton btnLogout;
 
     }
 }

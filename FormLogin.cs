@@ -34,6 +34,7 @@ namespace DeTai
         {
             try
             {
+                
                 SCXMdbDataContext db = new SCXMdbDataContext();
                 String username = txtUserName.Text;
 
@@ -43,6 +44,7 @@ namespace DeTai
 
                 try
                 {
+                    
                     Program.user = db.TaiKhoans.Single(u => u.UserName == username && u.TrangThai == true);
                 }
                 catch (InvalidOperationException ex)
@@ -60,13 +62,16 @@ namespace DeTai
 
                 if (Program.user.MaQuyen == "qadmin")
                 {
+                    Program.thread_Admin = new Thread(new ThreadStart(Program.openAddmin));
                     Program.thread_Admin.SetApartmentState(ApartmentState.STA);
                     Program.thread_Admin.Start();
+                    //this.Hide();
                     this.Close();
                 }
 
                 if (Program.user.MaQuyen == "qkho")
                 {
+                    Program.thread_Kho = new Thread(new ThreadStart(Program.openKho));
                     Program.thread_Kho.SetApartmentState(ApartmentState.STA);
                     Program.thread_Kho.Start();
                     this.Close();
@@ -74,6 +79,7 @@ namespace DeTai
 
                 if (Program.user.MaQuyen == "qketoan")
                 {
+                    Program.thread_KeToan = new Thread(new ThreadStart(Program.openKeToan));
                     Program.thread_KeToan.SetApartmentState(ApartmentState.STA);
                     Program.thread_KeToan.Start();
                     this.Close();

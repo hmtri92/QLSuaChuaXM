@@ -93,7 +93,7 @@ namespace DeTai
     #endregion
 		
 		public SCXMdbDataContext() : 
-				base(global::DeTai.Properties.Settings.Default.EF_QLSCXeMayConnectionString1, mappingSource)
+				base(global::DeTai.Properties.Settings.Default.EF_QLSCXeMayConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}

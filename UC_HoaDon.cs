@@ -42,8 +42,8 @@ namespace DeTai
                 setdataXe();
                 setdataXeKhach();
                 setdataSuaChua();
-
                 getListWork();
+
                 db.SuaChuas.InsertOnSubmit(suachua);
 
                 db.SubmitChanges();
@@ -334,7 +334,9 @@ namespace DeTai
                 chitietsuachua = new ChiTietSuaChua();
                 chitietsuachua.deleted = false;
                 chitietsuachua.SuaChua = suachua;
-                chitietsuachua.MaCTSC = suachua.Xe_Khach.MaXe + "-" + String.Format("{0:s}", DateTime.Now);
+                //chitietsuachua.MaCTSC = suachua.Xe_Khach.MaXe + "-" + String.Format("{0:s}", DateTime.Now);
+                chitietsuachua.MaCTSC = suachua.MaSC;
+                chitietsuachua.TienCong = 0;
 
                 lstCVSC = new List<CongViecSuaChua>();
 
@@ -355,6 +357,7 @@ namespace DeTai
                     cvsc.deleted = false;
                     lstCVSC.Add(cvsc);
                 }
+
             }
             catch (Exception ex)
             { }

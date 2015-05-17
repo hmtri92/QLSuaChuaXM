@@ -44,5 +44,15 @@ namespace DeTai.Properties {
                 return ((string)(this["EF_QLSCXeMayConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTRI-PC;Initial Catalog=EF_QLSCXeMay;Integrated Security=True")]
+        public string EF_QLSCXeMayConnectionString2 {
+            get {
+                return ((string)(this["EF_QLSCXeMayConnectionString2"]));
+            }
+        }
     }
 }
