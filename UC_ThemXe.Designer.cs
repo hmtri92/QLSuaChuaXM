@@ -45,28 +45,28 @@
             // 
             // txtColor
             // 
-            this.txtColor.Location = new System.Drawing.Point(157, 141);
+            this.txtColor.Location = new System.Drawing.Point(349, 135);
             this.txtColor.Name = "txtColor";
             this.txtColor.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.Properties.Appearance.Options.UseFont = true;
-            this.txtColor.Size = new System.Drawing.Size(211, 26);
+            this.txtColor.Size = new System.Drawing.Size(390, 26);
             this.txtColor.TabIndex = 2;
             this.txtColor.Click += new System.EventHandler(this.texbox_click);
             // 
             // txtPlate
             // 
-            this.txtPlate.Location = new System.Drawing.Point(158, 64);
+            this.txtPlate.Location = new System.Drawing.Point(350, 58);
             this.txtPlate.Name = "txtPlate";
             this.txtPlate.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlate.Properties.Appearance.Options.UseFont = true;
-            this.txtPlate.Size = new System.Drawing.Size(211, 26);
+            this.txtPlate.Size = new System.Drawing.Size(390, 26);
             this.txtPlate.TabIndex = 0;
             this.txtPlate.Click += new System.EventHandler(this.texbox_click);
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(42, 148);
+            this.labelControl8.Location = new System.Drawing.Point(234, 142);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(51, 20);
             this.labelControl8.TabIndex = 59;
@@ -75,7 +75,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(43, 111);
+            this.labelControl7.Location = new System.Drawing.Point(235, 105);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(50, 20);
             this.labelControl7.TabIndex = 58;
@@ -84,7 +84,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(43, 71);
+            this.labelControl6.Location = new System.Drawing.Point(235, 65);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(40, 20);
             this.labelControl6.TabIndex = 57;
@@ -94,7 +94,7 @@
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitle.Location = new System.Drawing.Point(41, 33);
+            this.lblTitle.Location = new System.Drawing.Point(233, 27);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(101, 29);
             this.lblTitle.TabIndex = 56;
@@ -102,7 +102,7 @@
             // 
             // lookLoaiXe
             // 
-            this.lookLoaiXe.Location = new System.Drawing.Point(157, 104);
+            this.lookLoaiXe.Location = new System.Drawing.Point(349, 98);
             this.lookLoaiXe.Name = "lookLoaiXe";
             this.lookLoaiXe.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookLoaiXe.Properties.Appearance.Options.UseFont = true;
@@ -116,7 +116,7 @@
             this.lookLoaiXe.Properties.DataSource = this.loaiXeBindingSource;
             this.lookLoaiXe.Properties.DisplayMember = "TenLXe";
             this.lookLoaiXe.Properties.ValueMember = "MaLXe";
-            this.lookLoaiXe.Size = new System.Drawing.Size(211, 26);
+            this.lookLoaiXe.Size = new System.Drawing.Size(390, 26);
             this.lookLoaiXe.TabIndex = 1;
             // 
             // loaiXeBindingSource
@@ -135,7 +135,7 @@
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.lblTitle);
             this.Name = "UC_ThemXe";
-            this.Size = new System.Drawing.Size(436, 193);
+            this.Size = new System.Drawing.Size(1000, 193);
             this.Load += new System.EventHandler(this.UC_ThemXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtColor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPlate.Properties)).EndInit();

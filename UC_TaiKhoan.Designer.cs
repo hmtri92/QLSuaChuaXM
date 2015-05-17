@@ -57,40 +57,40 @@
             // 
             // txtrePass
             // 
-            this.txtrePass.Location = new System.Drawing.Point(216, 178);
+            this.txtrePass.Location = new System.Drawing.Point(327, 178);
             this.txtrePass.Name = "txtrePass";
             this.txtrePass.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrePass.Properties.Appearance.Options.UseFont = true;
             this.txtrePass.Properties.PasswordChar = '*';
-            this.txtrePass.Size = new System.Drawing.Size(211, 26);
+            this.txtrePass.Size = new System.Drawing.Size(418, 26);
             this.txtrePass.TabIndex = 2;
             this.txtrePass.Click += new System.EventHandler(this.texbox_Click);
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(216, 135);
+            this.txtPass.Location = new System.Drawing.Point(327, 135);
             this.txtPass.Name = "txtPass";
             this.txtPass.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Properties.Appearance.Options.UseFont = true;
             this.txtPass.Properties.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(211, 26);
+            this.txtPass.Size = new System.Drawing.Size(418, 26);
             this.txtPass.TabIndex = 1;
             this.txtPass.Click += new System.EventHandler(this.texbox_Click);
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(216, 94);
+            this.txtUserName.Location = new System.Drawing.Point(327, 94);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.Properties.Appearance.Options.UseFont = true;
-            this.txtUserName.Size = new System.Drawing.Size(211, 26);
+            this.txtUserName.Size = new System.Drawing.Size(418, 26);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.Click += new System.EventHandler(this.texbox_Click);
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(75, 184);
+            this.labelControl4.Location = new System.Drawing.Point(186, 184);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(134, 20);
             this.labelControl4.TabIndex = 16;
@@ -99,7 +99,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(75, 141);
+            this.labelControl3.Location = new System.Drawing.Point(186, 141);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(73, 20);
             this.labelControl3.TabIndex = 15;
@@ -108,7 +108,7 @@
             // lblUserName
             // 
             this.lblUserName.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(75, 100);
+            this.lblUserName.Location = new System.Drawing.Point(186, 100);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(78, 20);
             this.lblUserName.TabIndex = 14;
@@ -117,7 +117,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(75, 263);
+            this.labelControl1.Location = new System.Drawing.Point(186, 263);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(71, 20);
             this.labelControl1.TabIndex = 20;
@@ -125,20 +125,20 @@
             // 
             // rdoStay
             // 
-            this.rdoStay.Location = new System.Drawing.Point(215, 263);
+            this.rdoStay.Location = new System.Drawing.Point(326, 263);
             this.rdoStay.Name = "rdoStay";
             this.rdoStay.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoStay.Properties.Appearance.Options.UseFont = true;
             this.rdoStay.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Mở"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Khóa")});
-            this.rdoStay.Size = new System.Drawing.Size(211, 27);
+            this.rdoStay.Size = new System.Drawing.Size(418, 27);
             this.rdoStay.TabIndex = 4;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(75, 223);
+            this.labelControl2.Location = new System.Drawing.Point(186, 223);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(46, 20);
             this.labelControl2.TabIndex = 22;
@@ -148,7 +148,7 @@
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitle.Location = new System.Drawing.Point(75, 44);
+            this.lblTitle.Location = new System.Drawing.Point(186, 44);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(132, 33);
             this.lblTitle.TabIndex = 33;
@@ -157,7 +157,7 @@
             // btnCheckMaCV
             // 
             this.btnCheckMaCV.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaCV.Image")));
-            this.btnCheckMaCV.Location = new System.Drawing.Point(433, 95);
+            this.btnCheckMaCV.Location = new System.Drawing.Point(751, 95);
             this.btnCheckMaCV.Name = "btnCheckMaCV";
             this.btnCheckMaCV.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaCV.TabIndex = 71;
@@ -165,7 +165,7 @@
             // 
             // lookRole
             // 
-            this.lookRole.Location = new System.Drawing.Point(216, 219);
+            this.lookRole.Location = new System.Drawing.Point(327, 219);
             this.lookRole.Name = "lookRole";
             this.lookRole.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookRole.Properties.Appearance.Options.UseFont = true;
@@ -175,7 +175,7 @@
             this.lookRole.Properties.DisplayMember = "TenQuyen";
             this.lookRole.Properties.ValueMember = "MaQuyen";
             this.lookRole.Properties.View = this.gridLookUpEdit1View;
-            this.lookRole.Size = new System.Drawing.Size(210, 26);
+            this.lookRole.Size = new System.Drawing.Size(417, 26);
             this.lookRole.TabIndex = 3;
             this.lookRole.Click += new System.EventHandler(this.texbox_Click);
             // 
@@ -226,7 +226,7 @@
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.lookRole);
             this.Name = "UC_TaiKhoan";
-            this.Size = new System.Drawing.Size(518, 348);
+            this.Size = new System.Drawing.Size(1000, 348);
             this.Load += new System.EventHandler(this.UC_TaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtrePass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();

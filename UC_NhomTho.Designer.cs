@@ -69,44 +69,44 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(62, 196);
+            this.labelControl5.Location = new System.Drawing.Point(150, 205);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(94, 20);
+            this.labelControl5.Size = new System.Drawing.Size(98, 20);
             this.labelControl5.TabIndex = 46;
-            this.labelControl5.Text = "Trưởng nhóm";
+            this.labelControl5.Text = "Trưởng nhóm:";
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(163, 154);
+            this.txtFullName.Location = new System.Drawing.Point(285, 165);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFullName.Properties.Appearance.Options.UseFont = true;
-            this.txtFullName.Size = new System.Drawing.Size(362, 26);
+            this.txtFullName.Size = new System.Drawing.Size(425, 26);
             this.txtFullName.TabIndex = 2;
             this.txtFullName.Click += new System.EventHandler(this.texbox_Click);
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(62, 161);
+            this.labelControl2.Location = new System.Drawing.Point(150, 170);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(71, 20);
+            this.labelControl2.Size = new System.Drawing.Size(75, 20);
             this.labelControl2.TabIndex = 44;
-            this.labelControl2.Text = "Tên nhóm";
+            this.labelControl2.Text = "Tên nhóm:";
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(62, 230);
+            this.labelControl1.Location = new System.Drawing.Point(150, 239);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(77, 20);
+            this.labelControl1.Size = new System.Drawing.Size(81, 20);
             this.labelControl1.TabIndex = 51;
-            this.labelControl1.Text = "Thành viên";
+            this.labelControl1.Text = "Thành viên:";
             // 
             // btnCheckMaNhom
             // 
             this.btnCheckMaNhom.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaNhom.Image")));
-            this.btnCheckMaNhom.Location = new System.Drawing.Point(531, 113);
+            this.btnCheckMaNhom.Location = new System.Drawing.Point(716, 121);
             this.btnCheckMaNhom.Name = "btnCheckMaNhom";
             this.btnCheckMaNhom.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaNhom.TabIndex = 1;
@@ -115,28 +115,28 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(161, 110);
+            this.txtMa.Location = new System.Drawing.Point(283, 121);
             this.txtMa.Name = "txtMa";
             this.txtMa.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMa.Properties.Appearance.Options.UseFont = true;
-            this.txtMa.Size = new System.Drawing.Size(364, 26);
+            this.txtMa.Size = new System.Drawing.Size(427, 26);
             this.txtMa.TabIndex = 0;
             this.txtMa.Click += new System.EventHandler(this.texbox_Click);
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(60, 117);
+            this.labelControl3.Location = new System.Drawing.Point(148, 126);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(66, 20);
+            this.labelControl3.Size = new System.Drawing.Size(70, 20);
             this.labelControl3.TabIndex = 73;
-            this.labelControl3.Text = "Mã nhóm";
+            this.labelControl3.Text = "Mã nhóm:";
             // 
             // lblTitle
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitle.Location = new System.Drawing.Point(62, 48);
+            this.lblTitle.Location = new System.Drawing.Point(150, 57);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(140, 33);
             this.lblTitle.TabIndex = 75;
@@ -153,12 +153,12 @@
             // gridThanhVien
             // 
             this.gridThanhVien.DataSource = this.thoNhomsBindingSource;
-            this.gridThanhVien.Location = new System.Drawing.Point(166, 267);
+            this.gridThanhVien.Location = new System.Drawing.Point(288, 278);
             this.gridThanhVien.MainView = this.gridViewThanhVien;
             this.gridThanhVien.Name = "gridThanhVien";
             this.gridThanhVien.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.SearchLookUpEditTho});
-            this.gridThanhVien.Size = new System.Drawing.Size(359, 217);
+            this.gridThanhVien.Size = new System.Drawing.Size(422, 217);
             this.gridThanhVien.TabIndex = 5;
             this.gridThanhVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewThanhVien});
@@ -237,7 +237,7 @@
             // 
             // btnResetCV
             // 
-            this.btnResetCV.Location = new System.Drawing.Point(484, 238);
+            this.btnResetCV.Location = new System.Drawing.Point(669, 249);
             this.btnResetCV.Name = "btnResetCV";
             this.btnResetCV.Size = new System.Drawing.Size(41, 23);
             this.btnResetCV.TabIndex = 6;
@@ -245,7 +245,7 @@
             // 
             // btnAddCongViec
             // 
-            this.btnAddCongViec.Location = new System.Drawing.Point(431, 238);
+            this.btnAddCongViec.Location = new System.Drawing.Point(616, 249);
             this.btnAddCongViec.Name = "btnAddCongViec";
             this.btnAddCongViec.Size = new System.Drawing.Size(47, 23);
             this.btnAddCongViec.TabIndex = 4;
@@ -254,7 +254,7 @@
             // 
             // lookNhomTruong
             // 
-            this.lookNhomTruong.Location = new System.Drawing.Point(163, 193);
+            this.lookNhomTruong.Location = new System.Drawing.Point(285, 204);
             this.lookNhomTruong.Name = "lookNhomTruong";
             this.lookNhomTruong.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookNhomTruong.Properties.Appearance.Options.UseFont = true;
@@ -270,7 +270,7 @@
             this.lookNhomTruong.Properties.NullText = "";
             this.lookNhomTruong.Properties.PopupSizeable = false;
             this.lookNhomTruong.Properties.ValueMember = "MaNV";
-            this.lookNhomTruong.Size = new System.Drawing.Size(362, 26);
+            this.lookNhomTruong.Size = new System.Drawing.Size(425, 26);
             this.lookNhomTruong.TabIndex = 3;
             this.lookNhomTruong.Click += new System.EventHandler(this.texbox_Click);
             // 
@@ -291,7 +291,7 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.lookNhomTruong);
             this.Name = "UC_NhomTho";
-            this.Size = new System.Drawing.Size(632, 508);
+            this.Size = new System.Drawing.Size(1000, 522);
             this.Load += new System.EventHandler(this.UC_NhomTho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtFullName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();

@@ -44,17 +44,17 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(193, 143);
+            this.txtName.Location = new System.Drawing.Point(302, 137);
             this.txtName.Name = "txtName";
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Properties.Appearance.Options.UseFont = true;
-            this.txtName.Size = new System.Drawing.Size(267, 26);
+            this.txtName.Size = new System.Drawing.Size(445, 26);
             this.txtName.TabIndex = 21;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(73, 188);
+            this.labelControl3.Location = new System.Drawing.Point(182, 182);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(55, 20);
             this.labelControl3.TabIndex = 20;
@@ -63,7 +63,7 @@
             // lblUserName
             // 
             this.lblUserName.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(73, 146);
+            this.lblUserName.Location = new System.Drawing.Point(182, 140);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(74, 20);
             this.lblUserName.TabIndex = 19;
@@ -71,26 +71,26 @@
             // 
             // txtGhiChu
             // 
-            this.txtGhiChu.Location = new System.Drawing.Point(193, 186);
+            this.txtGhiChu.Location = new System.Drawing.Point(302, 180);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChu.Properties.Appearance.Options.UseFont = true;
-            this.txtGhiChu.Size = new System.Drawing.Size(267, 150);
+            this.txtGhiChu.Size = new System.Drawing.Size(445, 150);
             this.txtGhiChu.TabIndex = 22;
             // 
             // txtMaQuyen
             // 
-            this.txtMaQuyen.Location = new System.Drawing.Point(193, 96);
+            this.txtMaQuyen.Location = new System.Drawing.Point(302, 90);
             this.txtMaQuyen.Name = "txtMaQuyen";
             this.txtMaQuyen.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaQuyen.Properties.Appearance.Options.UseFont = true;
-            this.txtMaQuyen.Size = new System.Drawing.Size(267, 26);
+            this.txtMaQuyen.Size = new System.Drawing.Size(445, 26);
             this.txtMaQuyen.TabIndex = 24;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(73, 102);
+            this.labelControl1.Location = new System.Drawing.Point(182, 96);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(69, 20);
             this.labelControl1.TabIndex = 23;
@@ -100,7 +100,7 @@
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitle.Location = new System.Drawing.Point(73, 45);
+            this.lblTitle.Location = new System.Drawing.Point(182, 39);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(87, 33);
             this.lblTitle.TabIndex = 34;
@@ -109,7 +109,7 @@
             // btnCheckMaCV
             // 
             this.btnCheckMaCV.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaCV.Image")));
-            this.btnCheckMaCV.Location = new System.Drawing.Point(466, 97);
+            this.btnCheckMaCV.Location = new System.Drawing.Point(753, 91);
             this.btnCheckMaCV.Name = "btnCheckMaCV";
             this.btnCheckMaCV.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaCV.TabIndex = 72;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.lblUserName);
             this.Name = "UC_Role";
-            this.Size = new System.Drawing.Size(527, 363);
+            this.Size = new System.Drawing.Size(1000, 363);
             this.Load += new System.EventHandler(this.UC_Role_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();

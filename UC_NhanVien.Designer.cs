@@ -483,7 +483,7 @@
             this.Controls.Add(this.lookNhom);
             this.Controls.Add(this.lookChucVu);
             this.Name = "UC_NhanVien";
-            this.Size = new System.Drawing.Size(1000, 517);
+            this.Size = new System.Drawing.Size(1000, 640);
             this.Load += new System.EventHandler(this.UC_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();

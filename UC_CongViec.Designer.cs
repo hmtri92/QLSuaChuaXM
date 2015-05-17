@@ -48,7 +48,7 @@
             // txtTienCong
             // 
             this.txtTienCong.EditValue = 0D;
-            this.txtTienCong.Location = new System.Drawing.Point(179, 153);
+            this.txtTienCong.Location = new System.Drawing.Point(281, 169);
             this.txtTienCong.Name = "txtTienCong";
             this.txtTienCong.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienCong.Properties.Appearance.Options.UseFont = true;
@@ -56,24 +56,24 @@
             this.txtTienCong.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.txtTienCong.Properties.Mask.EditMask = "n";
             this.txtTienCong.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtTienCong.Size = new System.Drawing.Size(211, 26);
+            this.txtTienCong.Size = new System.Drawing.Size(444, 26);
             this.txtTienCong.TabIndex = 2;
             this.txtTienCong.Click += new System.EventHandler(this.texBox_Click);
             // 
             // txtMaCV
             // 
-            this.txtMaCV.Location = new System.Drawing.Point(180, 76);
+            this.txtMaCV.Location = new System.Drawing.Point(282, 92);
             this.txtMaCV.Name = "txtMaCV";
             this.txtMaCV.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaCV.Properties.Appearance.Options.UseFont = true;
-            this.txtMaCV.Size = new System.Drawing.Size(211, 26);
+            this.txtMaCV.Size = new System.Drawing.Size(444, 26);
             this.txtMaCV.TabIndex = 0;
             this.txtMaCV.Click += new System.EventHandler(this.texBox_Click);
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(64, 160);
+            this.labelControl8.Location = new System.Drawing.Point(166, 176);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(69, 20);
             this.labelControl8.TabIndex = 66;
@@ -82,7 +82,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(65, 123);
+            this.labelControl7.Location = new System.Drawing.Point(167, 139);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(97, 20);
             this.labelControl7.TabIndex = 65;
@@ -91,7 +91,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(65, 83);
+            this.labelControl6.Location = new System.Drawing.Point(167, 99);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(92, 20);
             this.labelControl6.TabIndex = 64;
@@ -101,7 +101,7 @@
             // 
             this.lblTitle.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitle.Location = new System.Drawing.Point(64, 32);
+            this.lblTitle.Location = new System.Drawing.Point(166, 48);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(185, 29);
             this.lblTitle.TabIndex = 63;
@@ -110,7 +110,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(65, 200);
+            this.labelControl1.Location = new System.Drawing.Point(167, 216);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(40, 20);
             this.labelControl1.TabIndex = 67;
@@ -118,28 +118,28 @@
             // 
             // txtMoTa
             // 
-            this.txtMoTa.Location = new System.Drawing.Point(174, 196);
+            this.txtMoTa.Location = new System.Drawing.Point(276, 212);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.Properties.Appearance.Options.UseFont = true;
-            this.txtMoTa.Size = new System.Drawing.Size(530, 212);
+            this.txtMoTa.Size = new System.Drawing.Size(481, 212);
             this.txtMoTa.TabIndex = 3;
             this.txtMoTa.Click += new System.EventHandler(this.texBox_Click);
             // 
             // txtTenCV
             // 
-            this.txtTenCV.Location = new System.Drawing.Point(180, 117);
+            this.txtTenCV.Location = new System.Drawing.Point(282, 133);
             this.txtTenCV.Name = "txtTenCV";
             this.txtTenCV.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenCV.Properties.Appearance.Options.UseFont = true;
-            this.txtTenCV.Size = new System.Drawing.Size(211, 26);
+            this.txtTenCV.Size = new System.Drawing.Size(444, 26);
             this.txtTenCV.TabIndex = 1;
             this.txtTenCV.Click += new System.EventHandler(this.texBox_Click);
             // 
             // btnCheckMaCV
             // 
             this.btnCheckMaCV.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaCV.Image")));
-            this.btnCheckMaCV.Location = new System.Drawing.Point(397, 77);
+            this.btnCheckMaCV.Location = new System.Drawing.Point(732, 94);
             this.btnCheckMaCV.Name = "btnCheckMaCV";
             this.btnCheckMaCV.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaCV.TabIndex = 70;
@@ -160,7 +160,7 @@
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.lblTitle);
             this.Name = "UC_CongViec";
-            this.Size = new System.Drawing.Size(755, 432);
+            this.Size = new System.Drawing.Size(1000, 470);
             ((System.ComponentModel.ISupportInitialize)(this.txtTienCong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaCV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMoTa.Properties)).EndInit();

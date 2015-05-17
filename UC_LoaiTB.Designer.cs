@@ -44,45 +44,45 @@
             // 
             // txtMoTa
             // 
-            this.txtMoTa.Location = new System.Drawing.Point(234, 225);
+            this.txtMoTa.Location = new System.Drawing.Point(309, 234);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.Properties.Appearance.Options.UseFont = true;
-            this.txtMoTa.Size = new System.Drawing.Size(210, 75);
+            this.txtMoTa.Size = new System.Drawing.Size(467, 185);
             this.txtMoTa.TabIndex = 2;
             // 
             // txTen
             // 
-            this.txTen.Location = new System.Drawing.Point(234, 176);
+            this.txTen.Location = new System.Drawing.Point(309, 185);
             this.txTen.Name = "txTen";
             this.txTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txTen.Properties.Appearance.Options.UseFont = true;
-            this.txTen.Size = new System.Drawing.Size(211, 26);
+            this.txTen.Size = new System.Drawing.Size(468, 26);
             this.txTen.TabIndex = 1;
             // 
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl14.Location = new System.Drawing.Point(88, 227);
+            this.labelControl14.Location = new System.Drawing.Point(163, 236);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(39, 19);
+            this.labelControl14.Size = new System.Drawing.Size(45, 19);
             this.labelControl14.TabIndex = 55;
-            this.labelControl14.Text = "Mô tả";
+            this.labelControl14.Text = "Mô tả:";
             // 
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(88, 180);
+            this.labelControl15.Location = new System.Drawing.Point(163, 189);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(111, 19);
+            this.labelControl15.Size = new System.Drawing.Size(117, 19);
             this.labelControl15.TabIndex = 54;
-            this.labelControl15.Text = "Tên loại thiết bị";
+            this.labelControl15.Text = "Tên loại thiết bị:";
             // 
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl13.Location = new System.Drawing.Point(88, 47);
+            this.labelControl13.Location = new System.Drawing.Point(163, 71);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(142, 29);
             this.labelControl13.TabIndex = 53;
@@ -90,26 +90,26 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(234, 126);
+            this.txtMa.Location = new System.Drawing.Point(309, 135);
             this.txtMa.Name = "txtMa";
             this.txtMa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMa.Properties.Appearance.Options.UseFont = true;
-            this.txtMa.Size = new System.Drawing.Size(211, 26);
+            this.txtMa.Size = new System.Drawing.Size(468, 26);
             this.txtMa.TabIndex = 0;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(88, 130);
+            this.labelControl1.Location = new System.Drawing.Point(163, 139);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(104, 19);
+            this.labelControl1.Size = new System.Drawing.Size(110, 19);
             this.labelControl1.TabIndex = 60;
-            this.labelControl1.Text = "Mã loại thiết bị";
+            this.labelControl1.Text = "Mã loại thiết bị:";
             // 
             // btnCheckMaNhom
             // 
             this.btnCheckMaNhom.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckMaNhom.Image")));
-            this.btnCheckMaNhom.Location = new System.Drawing.Point(451, 127);
+            this.btnCheckMaNhom.Location = new System.Drawing.Point(783, 136);
             this.btnCheckMaNhom.Name = "btnCheckMaNhom";
             this.btnCheckMaNhom.Size = new System.Drawing.Size(25, 25);
             this.btnCheckMaNhom.TabIndex = 62;
@@ -129,7 +129,7 @@
             this.Controls.Add(this.labelControl15);
             this.Controls.Add(this.labelControl13);
             this.Name = "UC_LoaiTB";
-            this.Size = new System.Drawing.Size(578, 391);
+            this.Size = new System.Drawing.Size(1000, 450);
             ((System.ComponentModel.ISupportInitialize)(this.txtMoTa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
