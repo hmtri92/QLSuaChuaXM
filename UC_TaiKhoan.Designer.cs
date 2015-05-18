@@ -46,6 +46,7 @@
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colTenQuyen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.picWarningPassword = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtrePass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookRole.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWarningPassword.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtrePass
@@ -209,10 +211,25 @@
             this.colNotes.Visible = true;
             this.colNotes.VisibleIndex = 1;
             // 
+            // picWarningPassword
+            // 
+            this.picWarningPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picWarningPassword.EditValue = ((object)(resources.GetObject("picWarningPassword.EditValue")));
+            this.picWarningPassword.Location = new System.Drawing.Point(751, 177);
+            this.picWarningPassword.Name = "picWarningPassword";
+            this.picWarningPassword.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picWarningPassword.Properties.Appearance.Options.UseBackColor = true;
+            this.picWarningPassword.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.picWarningPassword.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.picWarningPassword.Size = new System.Drawing.Size(25, 27);
+            this.picWarningPassword.TabIndex = 72;
+            this.picWarningPassword.Visible = false;
+            // 
             // UC_TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.picWarningPassword);
             this.Controls.Add(this.btnCheckMaCV);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.labelControl2);
@@ -235,6 +252,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookRole.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quyenTruyCapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWarningPassword.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +276,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn colTenQuyen;
         private DevExpress.XtraGrid.Columns.GridColumn colNotes;
+        private DevExpress.XtraEditors.PictureEdit picWarningPassword;
     }
 }

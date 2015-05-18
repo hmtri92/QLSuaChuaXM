@@ -97,8 +97,11 @@ namespace DeTai
 
             try
             {
-                EncriptMD5 coder = new EncriptMD5();
-                taikhoan.Password = coder.encript(txtPass.Text);
+                if (txtPass.Text != "" && txtrePass.Text != "")
+                {
+                    EncriptMD5 coder = new EncriptMD5();
+                    taikhoan.Password = coder.encript(txtPass.Text);
+                }
                 taikhoan.QuyenTruyCap = (QuyenTruyCap)lookRole.GetSelectedDataRow();
                 taikhoan.TrangThai = rdoStay.SelectedIndex == 0;
 
@@ -120,7 +123,9 @@ namespace DeTai
                 txtPass.ResetText();
             }
             else
+            {
                 load();
+            }
         }
 
         private bool checkData()
@@ -129,15 +134,29 @@ namespace DeTai
             Check check = new Check();
 
             result = check.checkEmpty(txtUserName) && result;
-            result = check.checkEmpty(txtrePass) && result;
-            result = check.checkEmpty(txtPass) && result;
+
+            if (f_update == false)
+            {
+                result = check.checkEmpty(txtrePass) && result;
+                result = check.checkEmpty(txtPass) && result;
+            }
 
             QuyenTruyCap q = (QuyenTruyCap)lookRole.GetSelectedDataRow();
             if (q == null)
+            {
+                lookRole.BackColor = Color.Khaki;
                 return false;
+            }
 
             if (txtPass.Text != txtrePass.Text)
+            {
+                picWarningPassword.Visible = true;
                 return false;
+            }
+            else
+            {
+                picWarningPassword.Visible = false;
+            }
 
             return result;
         }

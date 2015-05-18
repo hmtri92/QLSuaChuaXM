@@ -120,3 +120,4 @@ D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.FormKeToan.vi-VN.resources
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.csproj.GenerateResource.Cache
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.exe.licenses
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\vi-VN\DeTai.resources.dll
+D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.csprojResolveAssemblyReference.cache
