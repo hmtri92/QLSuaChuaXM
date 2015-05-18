@@ -147,8 +147,8 @@ namespace DeTai
 
         private void update()
         {
-            try
-            {
+            //try
+            //{
                 nhanvien.TenNV = txtFullName.Text;
                 nhanvien.SDT = txtPhoneNum.Text;
                 nhanvien.NamSinh = DateTime.Parse(txtNamSinh.Text);
@@ -259,11 +259,11 @@ namespace DeTai
                 f_candelete = false;
 
                 MessageBox.Show("Success", "Success", MessageBoxButtons.OK);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Fail", "Fail", MessageBoxButtons.OK);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Fail", "Fail", MessageBoxButtons.OK);
+            //}
         }
 
         public void load()
@@ -319,8 +319,8 @@ namespace DeTai
 
         private void reset()
         {
-            db.GetChangeSet().Updates.Clear();
-            db.GetChangeSet().Inserts.Clear();
+            //db.GetChangeSet().Updates.Clear();
+            //db.GetChangeSet().Inserts.Clear();
             UC_NhanVien_Load(null, null);
         }
 
