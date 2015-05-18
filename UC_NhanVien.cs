@@ -147,8 +147,8 @@ namespace DeTai
 
         private void update()
         {
-            //try
-            //{
+            try
+            {
                 nhanvien.TenNV = txtFullName.Text;
                 nhanvien.SDT = txtPhoneNum.Text;
                 nhanvien.NamSinh = DateTime.Parse(txtNamSinh.Text);
@@ -195,7 +195,9 @@ namespace DeTai
                         maCV = gridView.GetRowCellValue(i, colMaCV).ToString();
                         mucdo = Int16.Parse(gridView.GetRowCellValue(i, colMucDo).ToString());
                     }
-                    catch (Exception) { }
+                    catch (Exception eb) {
+                        gridView.SetRowCellValue(i, colMucDo, 0);
+                    }
 
                     if (maCV == null)
                     {
@@ -220,7 +222,12 @@ namespace DeTai
                     if (f == true)
                         continue;
 
-                    bool del = (bool)gridView.GetRowCellValue(i, colDelete);
+                    bool del = false;
+                    try
+                    {
+                        del = (bool)gridView.GetRowCellValue(i, colDelete);
+                    } catch (NullReferenceException)  {}
+
                     if (mucdothanhthao.deleted == true)
                     {
                         if (f_candelete == false)
@@ -259,11 +266,11 @@ namespace DeTai
                 f_candelete = false;
 
                 MessageBox.Show("Success", "Success", MessageBoxButtons.OK);
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Fail", "Fail", MessageBoxButtons.OK);
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fail", "Fail", MessageBoxButtons.OK);
+            }
         }
 
         public void load()
