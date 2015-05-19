@@ -46,7 +46,7 @@ namespace DeTai
                     return;
 
                 var phieuThus = from p in db.PhieuThus
-                                where p.deleted == false && p.NgayLapPhieu > startTime && p.NgayLapPhieu < endTime
+                                where p.deleted == false && p.NgayLapPhieu >= startTime && p.NgayLapPhieu <= endTime
                                 select p; 
 
                 int n = phieuThus.Count();
