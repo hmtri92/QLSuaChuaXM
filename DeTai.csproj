@@ -256,6 +256,12 @@
     <Compile Include="UC_ThietBi.Designer.cs">
       <DependentUpon>UC_ThietBi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_ThongKeSuaChua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThongKeSuaChua.Designer.cs">
+      <DependentUpon>UC_ThongKeSuaChua.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_updateHoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -359,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ThietBi.resx">
       <DependentUpon>UC_ThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThongKeSuaChua.resx">
+      <DependentUpon>UC_ThongKeSuaChua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_updateHoaDon.resx">
       <DependentUpon>UC_updateHoaDon.cs</DependentUpon>

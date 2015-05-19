@@ -824,5 +824,19 @@ namespace DeTai
             Program.thread_login.Start();
             this.Close();
         }
+
+        private void navBarItem1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            mainComponent = new UC_ThongKeSuaChua();
+
+            splitContainerControlRight.Panel2.Controls.Clear();
+            splitContainerControlRight.Panel2.Controls.Add(mainComponent);
+            mainComponent.Dock = DockStyle.Fill;
+
+            btnSave.Enabled = false;
+            btnReset.Enabled = false;
+            btnChange.Enabled = false;
+            btnDelete.Enabled = false;
+        }
     }
 }

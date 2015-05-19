@@ -65,6 +65,7 @@
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControlRight)).BeginInit();
             this.splitContainerControlRight.SuspendLayout();
@@ -379,7 +380,8 @@
             this.btnXemNhomTho,
             this.btnThemNhomTho,
             this.navBarItem5,
-            this.navBarItem6});
+            this.navBarItem6,
+            this.navBarItem1});
             this.navBarControl.LargeImages = this.navbarImageCollectionLarge;
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
             this.navBarControl.Name = "navBarControl";
@@ -394,6 +396,9 @@
             // navBarGroup3
             // 
             this.navBarGroup3.Caption = "Thống kê";
+            this.navBarGroup3.Expanded = true;
+            this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1)});
             this.navBarGroup3.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.LargeImage")));
             this.navBarGroup3.Name = "navBarGroup3";
             // 
@@ -415,6 +420,13 @@
             // popupMenu1
             // 
             this.popupMenu1.Name = "popupMenu1";
+            // 
+            // navBarItem1
+            // 
+            this.navBarItem1.Caption = "Sửa chữa";
+            this.navBarItem1.Name = "navBarItem1";
+            this.navBarItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.SmallImage")));
+            this.navBarItem1.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem1_LinkClicked);
             // 
             // FormAddmin
             // 
@@ -479,5 +491,6 @@
         private DevExpress.XtraEditors.SimpleButton btnNext;
         private DevExpress.XtraEditors.SimpleButton btnRe;
         private DevExpress.XtraEditors.SimpleButton btnLogout;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem1;
     }
 }

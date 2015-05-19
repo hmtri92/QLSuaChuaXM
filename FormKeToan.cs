@@ -171,7 +171,7 @@ namespace DeTai
                 IController b = (IController)mainComponent;
                 b.save();
             }
-            catch (NullReferenceException ex) { }
+            catch (NullReferenceException ) { }
         }
 
         private void btnXemHoaDon_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -219,11 +219,11 @@ namespace DeTai
                 gridView.Columns["tenkhachhang"].Caption = "Khách hàng";
                 gridView.Columns["maKH"].Visible = false;
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void gridMain_DoubleClick(object sender, EventArgs e)
@@ -261,18 +261,18 @@ namespace DeTai
                     suachua.deleted = true;
                     db.SubmitChanges();
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException )
                 {
                     MessageBox.Show("Không tìm thấy");
                 }
 
                 view.DeleteRow(row);
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void deleteXe(object sender)
@@ -296,18 +296,18 @@ namespace DeTai
                     xe.deleted = true;
                     db.SubmitChanges();
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException )
                 {
                     MessageBox.Show("Không tìm thấy");
                 }
 
                 view.DeleteRow(row);
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void deleteLoaiXe(object sender)
@@ -331,18 +331,18 @@ namespace DeTai
                     loaixe.deleted = true;
                     db.SubmitChanges();
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException )
                 {
                     MessageBox.Show("Không tìm thấy");
                 }
 
                 view.DeleteRow(row);
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void gridMain_KeyDown(object sender, KeyEventArgs e)
@@ -404,18 +404,18 @@ namespace DeTai
                     congviec.deleted = true;
                     db.SubmitChanges();
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException )
                 {
                     MessageBox.Show("Không tìm thấy");
                 }
 
                 view.DeleteRow(row);
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void btnRe_Click(object sender, EventArgs e)
@@ -482,7 +482,7 @@ namespace DeTai
                 IController b = (IController)mainComponent;
                 b.Dispose();
             }
-            catch (NullReferenceException ex) { }
+            catch (NullReferenceException ) { }
         }
 
         private void btnTimKhach_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -534,11 +534,11 @@ namespace DeTai
                 gridView.Columns["mauxe"].Caption = "Màu xe";
                 gridView.Columns["loaixe"].Caption = "Loại xe";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -570,7 +570,7 @@ namespace DeTai
                 }
                 setAddOrChange();
             }
-            catch (IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException )
             { }
         }
 
@@ -634,11 +634,11 @@ namespace DeTai
                 gridView.Columns["description"].Caption = "Mô tả";
                 gridView.Columns["money"].Caption = "Tiền công";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void searchLXe()
@@ -664,11 +664,11 @@ namespace DeTai
                 gridView.Columns["name"].Caption = "Tên loại xe";
                 gridView.Columns["description"].Caption = "Mô tả";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void searchXe()
@@ -694,11 +694,11 @@ namespace DeTai
                 gridView.Columns["mauxe"].Caption = "Màu xe";
                 gridView.Columns["loaixe"].Caption = "Loại xe";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void searchKhachHang()
@@ -726,11 +726,11 @@ namespace DeTai
                 gridView.Columns["phone"].Caption = "Số điện thoại";
                 gridView.Columns["home"].Caption = "Địa chỉ";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void searchSuaChua()
@@ -767,11 +767,11 @@ namespace DeTai
                 gridView.Columns["tamthu"].Caption = "Tạm thu";
                 gridView.Columns["ghichu"].Caption = "Ghi Chú";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void btnThemKH_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -827,11 +827,11 @@ namespace DeTai
                 gridView.Columns["name"].Caption = "Tên loại xe";
                 gridView.Columns["description"].Caption = "Mô tả";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void btnThemLXe_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -877,11 +877,11 @@ namespace DeTai
                 gridView.Columns["description"].Caption = "Mô tả";
                 gridView.Columns["money"].Caption = "Tiền công";
             }
-            catch (SqlException ex)
+            catch (SqlException )
             {
                 MessageBox.Show("Kiểm tra kết nối csdl", "Error", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
 
         private void btnThemCV_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)

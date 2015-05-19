@@ -234,8 +234,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtDateCreate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtDateCreate.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
-            this.dtDateCreate.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
             this.dtDateCreate.Size = new System.Drawing.Size(210, 26);
             this.dtDateCreate.TabIndex = 6;
             this.dtDateCreate.Click += new System.EventHandler(this.texbox_Click);
@@ -247,7 +245,7 @@
             this.ckbFinish.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbFinish.Properties.Appearance.Options.UseFont = true;
             this.ckbFinish.Properties.Caption = "Đã sửa xong";
-            this.ckbFinish.Size = new System.Drawing.Size(126, 24);
+            this.ckbFinish.Size = new System.Drawing.Size(126, 23);
             this.ckbFinish.TabIndex = 7;
             // 
             // labelControl12
