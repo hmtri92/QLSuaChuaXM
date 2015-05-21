@@ -40,23 +40,23 @@
             this.lblTongThu = new DevExpress.XtraEditors.LabelControl();
             this.btnOk = new DevExpress.XtraEditors.SimpleButton();
             this.panelMain = new DevExpress.XtraEditors.PanelControl();
+            this.panelPhieuThu = new DevExpress.XtraEditors.PanelControl();
             this.gridMain = new DevExpress.XtraGrid.GridControl();
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtpage = new DevExpress.XtraEditors.TextEdit();
-            this.btnNext = new DevExpress.XtraEditors.SimpleButton();
             this.btnRe = new DevExpress.XtraEditors.SimpleButton();
-            this.panelPhieuThu = new DevExpress.XtraEditors.PanelControl();
+            this.btnNext = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtStart.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtStart.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtEnd.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtEnd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelPhieuThu)).BeginInit();
+            this.panelPhieuThu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpage.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelPhieuThu)).BeginInit();
-            this.panelPhieuThu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -169,6 +169,18 @@
             this.panelMain.Size = new System.Drawing.Size(1000, 497);
             this.panelMain.TabIndex = 44;
             // 
+            // panelPhieuThu
+            // 
+            this.panelPhieuThu.Controls.Add(this.gridMain);
+            this.panelPhieuThu.Controls.Add(this.txtpage);
+            this.panelPhieuThu.Controls.Add(this.btnRe);
+            this.panelPhieuThu.Controls.Add(this.btnNext);
+            this.panelPhieuThu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPhieuThu.Location = new System.Drawing.Point(2, 2);
+            this.panelPhieuThu.Name = "panelPhieuThu";
+            this.panelPhieuThu.Size = new System.Drawing.Size(996, 493);
+            this.panelPhieuThu.TabIndex = 45;
+            // 
             // gridMain
             // 
             this.gridMain.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -197,16 +209,6 @@
             this.txtpage.Size = new System.Drawing.Size(40, 20);
             this.txtpage.TabIndex = 7;
             // 
-            // btnNext
-            // 
-            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-            this.btnNext.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnNext.Location = new System.Drawing.Point(87, 3);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(25, 25);
-            this.btnNext.TabIndex = 6;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
             // btnRe
             // 
             this.btnRe.Image = ((System.Drawing.Image)(resources.GetObject("btnRe.Image")));
@@ -217,17 +219,15 @@
             this.btnRe.TabIndex = 5;
             this.btnRe.Click += new System.EventHandler(this.btnRe_Click);
             // 
-            // panelPhieuThu
+            // btnNext
             // 
-            this.panelPhieuThu.Controls.Add(this.gridMain);
-            this.panelPhieuThu.Controls.Add(this.txtpage);
-            this.panelPhieuThu.Controls.Add(this.btnRe);
-            this.panelPhieuThu.Controls.Add(this.btnNext);
-            this.panelPhieuThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPhieuThu.Location = new System.Drawing.Point(2, 2);
-            this.panelPhieuThu.Name = "panelPhieuThu";
-            this.panelPhieuThu.Size = new System.Drawing.Size(996, 493);
-            this.panelPhieuThu.TabIndex = 45;
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnNext.Location = new System.Drawing.Point(87, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(25, 25);
+            this.btnNext.TabIndex = 6;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // UC_ThongKeSuaChua
             // 
@@ -252,11 +252,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtEnd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelPhieuThu)).EndInit();
+            this.panelPhieuThu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpage.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelPhieuThu)).EndInit();
-            this.panelPhieuThu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

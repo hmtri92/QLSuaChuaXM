@@ -63,9 +63,10 @@
             this.mailGroup = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControlRight)).BeginInit();
             this.splitContainerControlRight.SuspendLayout();
@@ -381,7 +382,8 @@
             this.btnThemNhomTho,
             this.navBarItem5,
             this.navBarItem6,
-            this.navBarItem1});
+            this.navBarItem1,
+            this.navBarItem2});
             this.navBarControl.LargeImages = this.navbarImageCollectionLarge;
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
             this.navBarControl.Name = "navBarControl";
@@ -398,9 +400,17 @@
             this.navBarGroup3.Caption = "Thống kê";
             this.navBarGroup3.Expanded = true;
             this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1)});
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2)});
             this.navBarGroup3.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.LargeImage")));
             this.navBarGroup3.Name = "navBarGroup3";
+            // 
+            // navBarItem1
+            // 
+            this.navBarItem1.Caption = "Sửa chữa";
+            this.navBarItem1.Name = "navBarItem1";
+            this.navBarItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.SmallImage")));
+            this.navBarItem1.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem1_LinkClicked);
             // 
             // splitContainerControl
             // 
@@ -421,12 +431,12 @@
             // 
             this.popupMenu1.Name = "popupMenu1";
             // 
-            // navBarItem1
+            // navBarItem2
             // 
-            this.navBarItem1.Caption = "Sửa chữa";
-            this.navBarItem1.Name = "navBarItem1";
-            this.navBarItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.SmallImage")));
-            this.navBarItem1.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem1_LinkClicked);
+            this.navBarItem2.Caption = "report";
+            this.navBarItem2.Name = "navBarItem2";
+            this.navBarItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem2.SmallImage")));
+            this.navBarItem2.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem2_LinkClicked);
             // 
             // FormAddmin
             // 
@@ -492,5 +502,6 @@
         private DevExpress.XtraEditors.SimpleButton btnRe;
         private DevExpress.XtraEditors.SimpleButton btnLogout;
         private DevExpress.XtraNavBar.NavBarItem navBarItem1;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem2;
     }
 }

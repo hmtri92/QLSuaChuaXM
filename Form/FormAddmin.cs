@@ -13,6 +13,8 @@ using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid;
 using System.Data.SqlClient;
 using System.Threading;
+using DeTai.report;
+using DevExpress.XtraReports.UI;
 
 namespace DeTai
 {
@@ -837,6 +839,12 @@ namespace DeTai
             btnReset.Enabled = false;
             btnChange.Enabled = false;
             btnDelete.Enabled = false;
+        }
+
+        private void navBarItem2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            RP_ThongKeSuaChua rp = new RP_ThongKeSuaChua();
+            rp.ShowPreview();
         }
     }
 }

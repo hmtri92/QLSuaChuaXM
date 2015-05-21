@@ -120,5 +120,6 @@ D:\LapTrinh\DeTai\QLSuaChuaXM\bin\Debug\vi-VN\DeTai.resources.dll
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\vi-VN\DeTai.resources.dll
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.exe
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.pdb
-D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.csprojResolveAssemblyReference.cache
 D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.report.RP_HoaDon.resources
+D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.csprojResolveAssemblyReference.cache
+D:\LapTrinh\DeTai\QLSuaChuaXM\obj\Debug\DeTai.report.RP_ThongKeSuaChua.resources

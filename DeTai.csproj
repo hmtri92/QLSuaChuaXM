@@ -92,6 +92,12 @@
     <Compile Include="report\RP_HoaDon.Designer.cs">
       <DependentUpon>RP_HoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="report\RP_ThongKeSuaChua.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\RP_ThongKeSuaChua.Designer.cs">
+      <DependentUpon>RP_ThongKeSuaChua.cs</DependentUpon>
+    </Compile>
     <Compile Include="util\EncriptMD5.cs" />
     <Compile Include="Form\FormDemoReport.cs">
       <SubType>Form</SubType>
@@ -331,6 +337,9 @@
     </Compile>
     <EmbeddedResource Include="report\RP_HoaDon.resx">
       <DependentUpon>RP_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\RP_ThongKeSuaChua.resx">
+      <DependentUpon>RP_ThongKeSuaChua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControll\UC_ChangePassWord.resx">
       <DependentUpon>UC_ChangePassWord.cs</DependentUpon>
