@@ -21,19 +21,19 @@ namespace DeTai
         private void btnReview_Click(object sender, EventArgs e)
         {
             //XtraReport2 report = new XtraReport2();
-            ReportHoaDon report = new ReportHoaDon("2014-12-12T05:46:15");
-            report.ShowPreview();
+            //ReportHoaDon report = new ReportHoaDon("2014-12-12T05:46:15");
+            //report.ShowPreview();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            XtraReport1 report = new XtraReport1();
+            RP_Kho report = new RP_Kho();
             report.Print();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            XtraReport1 report = new XtraReport1();
+            RP_Kho report = new RP_Kho();
             report.ShowDesigner();
         }
     }

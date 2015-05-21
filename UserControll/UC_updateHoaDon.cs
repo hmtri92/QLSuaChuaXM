@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 using System.Runtime.InteropServices;
+using DeTai.report;
+using DevExpress.XtraReports.UI;
 
 namespace DeTai
 {
@@ -666,7 +668,7 @@ namespace DeTai
 
             PhieuThus phieuthu = new PhieuThus();
             phieuthu.SuaChua = suachua;
-            phieuthu.SoTien = sotien;
+            phieuthu.SoTien = tongtien;
             phieuthu.NgayLapPhieu = DateTime.Now;
             phieuthu.UserName = Program.user.UserName;
             phieuthu.deleted = false;
@@ -677,6 +679,9 @@ namespace DeTai
 
             MessageBox.Show("Tiền dư: " + (sotien - tongtien));
             clock();
+
+            RP_HoaDon rp_HoaDon = new RP_HoaDon(phieuthu.SoPhieu);
+            rp_HoaDon.ShowPreview();
         }
 
         private void checkPhieuThu()

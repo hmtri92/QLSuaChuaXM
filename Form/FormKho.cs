@@ -13,6 +13,7 @@ using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using System.Data.SqlClient;
 using System.Threading;
+using DevExpress.XtraReports.UI;
 
 namespace DeTai
 {
@@ -708,6 +709,12 @@ namespace DeTai
             Program.thread_login.SetApartmentState(ApartmentState.STA);
             Program.thread_login.Start();
             this.Close();
+        }
+
+        private void btnReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            RP_Kho rp_Kho = new RP_Kho();
+            rp_Kho.ShowPreview();
         }
     }
 }

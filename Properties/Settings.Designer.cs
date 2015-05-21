@@ -26,28 +26,6 @@ namespace DeTai.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTRI\\LOCALHOST;Initial Catalog=EF_QLSCXeMay;Integrated Security=Tr" +
-            "ue")]
-        public string EF_QLSCXeMayConnectionString {
-            get {
-                return ((string)(this["EF_QLSCXeMayConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTRI-PC\\LOCALHOST;Initial Catalog=EF_QLSCXeMay;Integrated Security" +
-            "=True")]
-        public string EF_QLSCXeMayConnectionString1 {
-            get {
-                return ((string)(this["EF_QLSCXeMayConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTRI-PC;Initial Catalog=EF_QLSCXeMay;Integrated Security=True")]
         public string EF_QLSCXeMayConnectionString2 {
             get {

@@ -11,20 +11,17 @@ using System.Threading.Tasks;
 
 namespace DeTai
 {
-    public partial class XtraReport1 : DevExpress.XtraReports.UI.XtraReport
+    public partial class RP_Kho : DevExpress.XtraReports.UI.XtraReport
     {
-        public XtraReport1()
+        public RP_Kho()
         {
             InitializeComponent();
 
             SCXMdbDataContext db = new SCXMdbDataContext();
             var thietbis = from p in db.ThietBis
-                           where p.deleted == false
+                           where p.deleted == false && p.SoLuong <= p.min
                            select p;
             ThietBibindingSource.DataSource = thietbis;
         }
-
-
-
     }
 }

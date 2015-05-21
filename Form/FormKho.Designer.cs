@@ -35,6 +35,7 @@
             this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.btnCheckThietBi = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.btnReport = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.btnThemLTB = new DevExpress.XtraNavBar.NavBarItem();
@@ -49,6 +50,8 @@
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.btnTaiKhoan = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.splitContainerControlRight = new DevExpress.XtraEditors.SplitContainerControl();
             this.btnLogout = new DevExpress.XtraEditors.SimpleButton();
@@ -108,9 +111,17 @@
             this.navBarGroup3.Caption = "Thống kê";
             this.navBarGroup3.Expanded = true;
             this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.btnCheckThietBi)});
+            new DevExpress.XtraNavBar.NavBarItemLink(this.btnCheckThietBi),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.btnReport)});
             this.navBarGroup3.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.LargeImage")));
             this.navBarGroup3.Name = "navBarGroup3";
+            // 
+            // btnReport
+            // 
+            this.btnReport.Caption = "report";
+            this.btnReport.Name = "btnReport";
+            this.btnReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnReport.SmallImage")));
+            this.btnReport.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.btnReport_LinkClicked);
             // 
             // navBarItem4
             // 
@@ -208,7 +219,8 @@
             this.u,
             this.navBarGroup1,
             this.navBarGroup3,
-            this.navBarGroup2});
+            this.navBarGroup2,
+            this.navBarGroup4});
             this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.btnXemThietBi,
             this.btnThemTB,
@@ -219,7 +231,9 @@
             this.navBarItem3,
             this.navBarItem4,
             this.btnCheckThietBi,
-            this.btnTaiKhoan});
+            this.btnTaiKhoan,
+            this.navBarItem1,
+            this.btnReport});
             this.navBarControl.LargeImages = this.navbarImageCollectionLarge;
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
             this.navBarControl.Name = "navBarControl";
@@ -246,6 +260,20 @@
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.SmallImage")));
             this.btnTaiKhoan.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.btnTaiKhoan_LinkClicked);
+            // 
+            // navBarGroup4
+            // 
+            this.navBarGroup4.Caption = "Report";
+            this.navBarGroup4.Expanded = true;
+            this.navBarGroup4.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1)});
+            this.navBarGroup4.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup4.LargeImage")));
+            this.navBarGroup4.Name = "navBarGroup4";
+            // 
+            // navBarItem1
+            // 
+            this.navBarItem1.Caption = "navBarItem1";
+            this.navBarItem1.Name = "navBarItem1";
             // 
             // splitContainerControl
             // 
@@ -488,5 +516,8 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
         private DevExpress.XtraNavBar.NavBarItem btnTaiKhoan;
         private DevExpress.XtraEditors.SimpleButton btnLogout;
+        private DevExpress.XtraNavBar.NavBarItem btnReport;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem1;
     }
 }
